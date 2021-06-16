@@ -63,7 +63,6 @@ window.addEventListener('DOMContentLoaded', function(){
         
         fetchPromise.then(response => {
             console.log(response);
-            //var previo = localStorage.setItem('response', response.json());
             return response.json();
         }).then(result => {
             console.log(result);
@@ -158,33 +157,5 @@ window.addEventListener('DOMContentLoaded', function(){
             indicadores[i].innerHTML = '--';
         }
     }
-/*
-    function setIndicadores(a,b,c,d,e,f) {
-        let indicadores = [a,b,c,d,e,f];
-        for (let i = 0; i < indicadores.length; i++) {
-            localStorage.setItem(indicadores[i],'--');
-        }
-    }*/
-/*
-    function aGuardarAGuardar(a,b,c) {
-        `${a}`.`${b}` = a;
-        localStorage.setItem(a,a);
-    }
-*/
-    /*function getIndicadores(a,b,c,d,e,f) {
-
-
-        
-        tempMax.innerHTML = localStorage.getItem('tempMax');
-            tempMin.innerHTML = localStorage.getItem('tempMax');
-            humedad.innerHTML = localStorage.getItem('humedad');
-            sTerm.innerHTML = localStorage.getItem('sTerm');
-            prAtmos.innerHTML = localStorage.getItem('prAtmos');
-            velVto.innerHTML = localStorage.getItem('velVto');
-    }*/
 
 });
-
-/*Pacifico -2.993770, -129.835109
-
-*/
