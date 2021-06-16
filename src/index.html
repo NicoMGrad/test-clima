@@ -15,6 +15,110 @@
 		<link rel="manifest" href="/assets/manifest.json"/>
 	</head>
 	<body>
-		<div id="app"></div>
+		<main id="main">
+			<H1></H1>
+			<H2></H2>
+			
+			<select name="country" id="ciudades">
+				<option value="Selected" style="color:lightgrey;">Seleccioná una ciudad</option>
+				<option value="Abu Dhabi" style="color:lightgrey;">Abu Dhabi</option>
+				<option value="Alaska" style="color:lightgrey;">Alaska</option>
+				<option value="Amsterdam" style="color:lightgrey;">Amsterdam</option>
+				<option value="Asuncion" style="color:lightgrey;">Asunción</option>
+				<option value="Atlántida" style="color:lightgrey;">Atlántida</option>
+				<option value="Bangkok" style="color:lightgrey;">Bangkok</option>
+				<option value="Beijing" style="color:lightgrey;">Beijing</option>
+				<option value="Berlin" style="color:lightgrey;">Berlín</option>
+				<option value="Bogota" style="color:lightgrey;">Bogotá</option>
+				<option value="Brasilia" style="color:lightgrey;">Brasilia</option>
+				<option value="Bratislava" style="color:lightgrey;">Bratislava</option>
+				<option value="Bruselas" style="color:lightgrey;">Bruselas</option>
+				<option value="Buenos Aires" style="color:lightgrey;">Buenos Aires</option>
+				<option value="Caracas" style="color:lightgrey;">Caracas</option>
+				<option value="Copenhagen" style="color:lightgrey;">Copenhagen</option>
+				<option value="Dublin" style="color:lightgrey;">Dublin</option>
+				<option value="Georgetown" style="color:lightgrey;">Georgetown</option>
+				<option value="Havana" style="color:lightgrey;">Havana</option>
+				<option value="Cairo" style="color:lightgrey;">El Cairo</option>
+				<option value="Tokyo" style="color:lightgrey;">Tokio</option>
+			</select>
+	
+			<div id="result">
+				<div>
+					<!--TEMPERATURA MAXIMA-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								trending_up
+							</span>
+						</p>
+						<p>Temp. Máx.</p>
+						<p id="tempMax"></p>
+					</div>
+					<!--TEMPERATURA MINIMA-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								trending_down
+							</span>
+						</p>
+						<p>Temp. Min.</p>
+						<p id="tempMin"></p>
+					</div>
+					<!--HUMEDAD-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								water
+							</span>
+						</p>
+						<p>Humedad</p>
+						<p id="humedad"></p>
+					</div>
+					<!--SENSACIÓN TÉRMICA-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								ac_unit
+							</span>
+						</p>
+						<p>Sens. Térm.</p>
+						<p id="sTerm"></p>
+					</div>
+					<!--PRESION ATMOSFERICA-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								storm
+							</span>
+						</p>
+						<p>P. Atmos.</p>
+						<p id="prAtmos"></p>
+					</div>
+					<!--VELOCIDAD VIENTO-->
+					<div class="cajoncitos">
+						<p>
+							<span class="material-icons-outlined">
+								air
+							</span>
+						</p>
+						<p>Vel. Viento</p>
+						<p id="velVto"></p>
+					</div>
+				</div>
+				<div>
+					<div id="cont_map">
+						<img src="img/circulo.svg" alt="Buscar aquí" id="circulo" />
+						<img src="img/nubes.svg" alt="Buscar aquí" id="nubes" />
+						<iframe
+							id="mapa"
+							frameborder="0" style="border:0"
+							src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDr6iGcoym0HZEVrwaAkA5Hqz1EJZTVmg4&center=-2.993770,-129.835109&zoom=12" allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</main>
+		 <script src="main.js"></script>
 	</body>
 </html>
